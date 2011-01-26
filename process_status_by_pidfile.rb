@@ -2,7 +2,9 @@ class ProcessStatusByPidfile < Scout::Plugin
 
   OPTIONS = <<-EOS
     pidfile:
+      name: PID File
       default: /path/to/pidfile
+      notes: Path to a pid file
   EOS
 
   def build_report
